@@ -176,3 +176,4 @@ section{padding:56px 0}
 .viel:hover{text-decoration:underline}
 @media(max-width:860px){.logos{grid-template-columns:repeat(2,1fr)}}
 .pet{padding:0;overflow:hidden}.pet img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:0}.pet figcaption{padding:12px 8px}.cred{display:block;margin-top:6px;font-size:.72rem;opacity:.75}
+.brandnote{margin-top:14px}
