@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://images.unsplash.com; frame-src https://www.google.com; style-src 'self'; font-src 'self'; script-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://images.unsplash.com; frame-src https://www.google.com; style-src 'self'; font-src 'self'; script-src 'self'; connect-src https://api.emailjs.com; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Consultório Veterinário em Linda-a-Velha | Grupo do meu melhor amigo</title>
 <meta name="description" content="Consultório veterinário em Linda-a-Velha: consultas, vacinação, desparasitação e acompanhamento para cães, gatos e outros animais. Grupo do meu melhor amigo. Av. 25 de Abril de 1974.">
@@ -145,7 +145,7 @@
 <div>
 <p class="eyebrow">Consultas</p>
 <h2 class="title">Marque a sua consulta</h2>
-<p class="sub">Preencha o pedido e confirmamos o dia e a hora por telefone ou e-mail. O pedido abre no seu programa de e-mail e só é enviado quando carregar em "Enviar".</p>
+<p class="sub">Preencha o pedido e confirmamos o dia e a hora por telefone. O pedido é enviado diretamente para a nossa equipa.</p>
 <p class="note">Nos casos urgentes, não use este formulário: ligue-nos ou dirija-se a um serviço de urgência veterinária.</p>
 </div>
 <form id="f-marcacao" novalidate>
@@ -160,8 +160,9 @@
 <p class="msg-exo note" id="m-exo" hidden>Animais exóticos são atendidos apenas com marcação prévia. Confirmaremos o dia e a hora consigo antes da consulta.</p>
 <div><label for="m-motivo">Motivo (breve)</label><textarea id="m-motivo" maxlength="500"></textarea></div>
 <label class="check"><input type="checkbox" id="m-ok" required><span>Aceito que os dados indicados sejam usados para contactar-me sobre esta marcação. <a href="privacidade.html">Política de privacidade</a>.</span></label>
+<input class="hp" id="m-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <div class="msg" id="m-msg" role="status"></div>
-<button class="btn btn-p" type="submit">Enviar pedido por e-mail</button>
+<button class="btn btn-p" type="submit">Enviar pedido</button>
 </form>
 </div>
 </section>
@@ -218,7 +219,7 @@
 <div><label for="s-texto">A sua sugestão</label><textarea id="s-texto" required maxlength="800"></textarea></div>
 <div><label for="s-mail">E-mail (opcional, se quiser resposta)</label><input id="s-mail" type="email" maxlength="120" autocomplete="email"></div>
 <div class="msg" id="s-msg" role="status"></div>
-<button class="btn btn-n" type="submit">Enviar sugestão por e-mail</button>
+<button class="btn btn-n" type="submit">Enviar sugestão</button>
 </form>
 </div>
 </section>
