@@ -44,9 +44,16 @@
       if (!/^[+0-9 ]{9,20}$/.test(tel)) { show(msg, "Indique um número de telemóvel válido.", false); return; }
       if (!document.getElementById("m-ok").checked) { show(msg, "É necessário aceitar o contacto para avançar.", false); return; }
       show(msg, "A abrir o seu programa de e-mail. Carregue em Enviar para concluir.", true);
-      openMail("Pedido de marcação - " + animal,
+      openMail("Pedido de marcação" + ((esp === "Cão" || esp === "Gato") ? "" : " (exótico, marcação prévia)") + " - " + animal,
         "Nome: " + nome + "\nTelemóvel: " + tel + "\nAnimal: " + animal + " (" + esp + ")\nMotivo: " + motivo);
     });
+  }
+
+  var sel = document.getElementById("m-especie");
+  var exo = document.getElementById("m-exo");
+  if (sel && exo) {
+    var upd = function () { exo.hidden = (sel.value === "Cão" || sel.value === "Gato"); };
+    sel.addEventListener("change", upd); upd();
   }
 
   var fs = document.getElementById("f-sug");
