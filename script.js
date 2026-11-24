@@ -1,6 +1,6 @@
 (function () {
   "use strict";
-  var EMAIL = "geral@centroveterinariolindaavelha.pt";
+  var EMAIL = "geral" + "@" + "centroveterinariolindaavelha.pt";
 
   // Menu móvel
   var burger = document.getElementById("burger");
