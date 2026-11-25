@@ -231,3 +231,5 @@ section{padding:56px 0}
 .ck-btns button{font:inherit;font-weight:700;padding:9px 20px;border-radius:999px;border:2px solid #0b6f7a;background:#fff;color:#0b6f7a;cursor:pointer}
 .ck-btns button#ck-yes{background:#0b6f7a;color:#fff}
 #ck-reset{font:inherit;font-weight:700;padding:8px 18px;border-radius:999px;border:2px solid #0b6f7a;background:#fff;color:#0b6f7a;cursor:pointer}
+
+.revs{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-bottom:30px}.rev{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;margin:0}.rev blockquote{color:#34454f;font-size:.98rem;line-height:1.55;margin:0 0 14px}.rev figcaption{color:var(--navy);font-weight:700;font-size:.85rem}@media(max-width:760px){.revs{grid-template-columns:1fr}}
